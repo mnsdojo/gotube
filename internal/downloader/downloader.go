@@ -102,3 +102,5 @@ func DownloadPlaylist(url string, config Config) error {
 	wg.Wait()
 	return nil
 }
+
+

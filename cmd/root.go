@@ -11,12 +11,11 @@ var rootCmd = &cobra.Command{
 It supports various formats, quality options, and concurrent downloads.`,
 }
 
-
-func Execute()error{
+func Execute() error {
 	return rootCmd.Execute()
 }
 
-
-func init(){
+func init() {
 	rootCmd.AddCommand(downloadCmd)
+	rootCmd.AddCommand(infoCmd)
 }
